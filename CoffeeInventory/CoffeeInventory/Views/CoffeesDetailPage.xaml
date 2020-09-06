@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CoffeeInventory.Views.CoffeesDetailPage">
+
+    <TableView Intent="Form"
+               Margin="16,0">
+        <TableRoot>
+            <TableSection Title="Coffee">
+                <EntryCell Label="Type"
+                           Text="{Binding Path=Coffee.Type}" />
+                <EntryCell Label="Density"
+                           Text="{Binding Path=Coffee.Density}"
+                           Keyboard="Numeric" />
+                <SwitchCell Text="Is it a Stock?"
+                            On="{Binding Path=Coffee.IsStock}" />
+            </TableSection>
+            <TableSection>
+                <ViewCell>
+                    <Button Text="Save"
+                            Command="{Binding SaveCommand}" />
+                </ViewCell>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+
+    <!--<StackLayout>
+
+        <Picker Title="Select Coffee Type"
+                TitleColor="Red"
+                ItemsSource="{Binding ListCoffeeTypes}"
+                ItemDisplayBinding="{Binding Value}" 
+                SelectedItem="{Binding SelectedCoffeeType}"/>
+
+        <Label Text="{Binding CoffeeTypeText}" />
+
+    </StackLayout>-->
+    
+</ContentPage>
