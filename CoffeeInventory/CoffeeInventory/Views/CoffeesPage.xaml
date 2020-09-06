@@ -25,7 +25,7 @@
                            Text="{Binding Type}"
                            Detail="{Binding DensityInGrams}"
                            DetailColor="Black"
-                           TextColor="Red">
+                           TextColor="Gold">
                     <ImageCell.ContextActions>
                         <MenuItem Text="Delete"
                                   IsDestructive="True"
