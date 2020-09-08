@@ -17,7 +17,7 @@
     <ListView ItemsSource="{Binding Coffees}"
               SelectedItem="{Binding SelectedCoffee, Mode=TwoWay}" 
               HasUnevenRows="True"
-              SeparatorColor="Gray"
+              SeparatorColor="LightGray"
               ItemSelected="OnCoffeeSelected">
         <ListView.ItemTemplate>
             <DataTemplate>

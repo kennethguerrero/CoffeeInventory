@@ -13,7 +13,7 @@
 
     <ListView ItemsSource="{Binding CoffeeGrounds}"
               HasUnevenRows="True"
-              SeparatorColor="Gray">
+              SeparatorColor="LightGray">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ImageCell ImageSource="{Binding CoffeeImage}"

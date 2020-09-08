@@ -14,7 +14,7 @@
     <StackLayout>
         <ListView ItemsSource="{Binding CoffeeBeans}"
                   HasUnevenRows="True"
-                  SeparatorColor="Gray">
+                  SeparatorColor="LightGray">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ImageCell ImageSource="{Binding CoffeeImage}"
